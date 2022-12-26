@@ -148,6 +148,21 @@ n=n%/%10
 print(paste("Reverse Number is:",rev))
 }
 
+{
++ n=as.integer(readline(prompt = "Enter a number : "))
++ s=0
++ while(n>0)
++ {
++ r=n%%10
++ s=s+r
++ n=n%/%10
++ }
++ print(paste("Sum of the digits is : ",s))
++ }
+Enter a number : 213
+[1] "Sum of the digits is :  6"
+> 
+
 2.Write R program to calculate the sum of two matrices of given size.
 🡢
 matrix1<-matrix(c(11,12,13,14,15,16,17,18,19),nrow=3,ncol=3,byrow=TRUE)
