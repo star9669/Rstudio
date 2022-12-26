@@ -269,4 +269,51 @@ Ferrari Dino   19.7   6 145.0 175 3.62 2.770 15.5  0  1    5    6
 Maserati Bora  15.0   8 301.0 335 3.54 3.570 14.6  0  1    5    8
 
 
+
+//Set C 
+1.Write R Program to perform the followingin
+a.Create a Scattered Plot to Compare wind speed and temperature.
+🡢
+input<-airquality[,c('Wind','Temp')]
+ print(head(input))
+input<-airquality[,c('Wind','Temp')]
+png=(file="new ")
+ plot(x=airquality$Wind,
+ y=airquality$Temp,
+ main="A quick comparison")
+
+b.Create a Scattered Plot to Show Relationship between ozone and wind values by giving appropriate values to color argument.
+🡢
+input<-airquality[,c('Ozone','Wind')]
+ print(head(input))
+input<-airquality[,c('Ozone','Wind')]
+ png=(file="new2")
+ plot(x=airquality$Ozone,
+ y=airquality$Wind,
+ main="Ozone and Wind Rel")
+
+c.Create a bar plot show the ozone level for all the days having temperature >70.
+(Use inbuilt dataset air quality)
+🡢jamat asel tar try kara
+
+
+
+
+
+
+
+
+
+
+days<-c("1","2","3","4","5")
+> Users<-c(67,72,74,62,56)
+> IB<-data.frame(days,Users)
+> IB
+  days Users
+1    1    67
+2    2    72
+3    3    74
+4    4    62
+5    5    56
+> barplot(height = IB$Users, main = "Ozone layers", xlab = "days", ylab = "ozone level", names.arg = IB$days, border = "dark blue", col = "pink")
  
